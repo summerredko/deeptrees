@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deep Trees</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            background-image: url('images/background9.png');
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .title {
+            max-width: 450px;
+            margin-top: 50px;
+            width: 100%;
+        }
+
+        .logo {
+            max-width: 425px;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+
+        .airplane {
+            max-width: 450px;
+            padding-bottom: 0;
+            width: 100%;
+        }
+
+        .description {
+            max-width: 475px;
+            margin-top: 20px;
+            padding: 20px;
+            font-size: 16px;
+            line-height: 1.6;
+            position: relative;
+            text-align: left;
+        }
+
+        .description::before {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: white;
+            margin: 5px auto 40px auto;
+        }
+
+        .social-icon {
+            width: 26px;
+            height: 26px;
+            margin-left: 5px;
+            vertical-align: middle;
+            transition: transform 0.3s ease, filter 0.3s ease;
+        }
+
+        .social-icon:hover {
+            transform: scale(1.2);
+            filter: drop-shadow(0 0 6px rgba(184, 83, 83, 0.724));
+        }
+
+        a {
+            text-decoration: none;
+            border: none;
+            outline: none;
+        }
+
+        a:visited,
+        a:active,
+        a:focus {
+            text-decoration: none;
+            border: none;
+            outline: none;
+        }
+
+        .social-block {
+            max-width: 475px;
+            width: 100%;
+            margin: 10px auto 0 auto;
+            padding: 11px 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            border: 2px solid white;
+            font-weight: bold;
+            font-size: 14px;
+            color: #ffffff;
+            flex-wrap: nowrap;
+            box-sizing: border-box;
+        }
+
+        .transparent-text {
+            white-space: nowrap;
+        }
+
+
+        /* ---- MOBILE STYLES ---- */
+        @media (max-width: 600px) {
+        .title,
+        .logo,
+        .airplane,
+        .description {
+            max-width: 100%;
+            width: 100%;
+            padding: 10px;
+        }
+
+        .description {
+            font-size: 15px;
+            padding: 15px;
+        }
+
+        .transparent-text {
+            text-align: center;
+            font-size: 15px;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .social-block div {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .social-icon {
+            width: 30px;
+            height: 30px;
+            margin: 0;
+        }
+        }
+
+        @media (max-width: 500px) {
+        .social-block {
+            flex-wrap: wrap;
+            gap: 8px;
+            font-size: 13px;
+        }
+
+        .social-icon {
+            width: 24px;
+            height: 24px;
+        }
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <img src="images/deepfont.png" alt="Logo" class="title" />
+    <img src="images/deepugh.png" alt="Logo" class="logo" />
+    <img src="images/smoking3.png" alt="airplane" class="airplane" />
+
+    <div class="description">
+        Deep Trees didn’t grow overnight. Somewhere between an old keyboard, a shoebox full of lyrics, and a mild
+        obsession
+        with vintage reverb, the project took root in the daydreams of a misfit.<br /><br />
+        The sound? Think nostalgia dipped in neon—lo-fi heartache with hi-fi polish—wrapped in a synth-heavy hug and
+        seen
+        through a soft-focus lens.<br /><br />
+        Deep Trees is the curated musical project of songwriter and multi-instrumentalist Summer Redko, who got her
+        start as
+        a sound engineer for major labels and top-tier studios, with dozens of film and TV credits quietly stacking up
+        behind the scenes. There’s a cosmic yearning in her work, and a refusal to ever call a track
+        “done.”<br /><br />
+        Her debut EP, <i>Smoking in Airports</i>, is a delicate balance of digital and human. Collaborating with
+        industry
+        heavy hitters like drummer Nik Hughes (Bush, Andy Grammer, Puddle of Mud), bassist Luca Giachi (Sony/BMG,
+        Universal), and horn player Victor Mejia (when the stars—and budgets—align), the music carries traces of
+        heartbreak,
+        euphoria, and that weird feeling you get watching old home videos.<br /><br />
+
+        <div class="social-block">
+            <span class="transparent-text">Follow for the vibes, stay for the feels.</span>
+            <div>
+                <a href="https://www.facebook.com/deeptrees" target="_blank">
+                    <img src="images/facebook1.png" alt="Facebook" class="social-icon" />
+                </a>
+                <a href="https://www.instagram.com/deep_trees/" target="_blank">
+                    <img src="images/instagram.png" alt="Instagram" class="social-icon" />
+                </a>
+                <a href="https://deeptrees.bandcamp.com/" target="_blank">
+                    <img src="images/bandcamp.png" alt="Bandcamp" class="social-icon" />
+                </a>
+                <a href="https://soundcloud.com/deeptrees" target="_blank">
+                    <img src="images/soundcloud.png" alt="SoundCloud" class="social-icon" />
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
